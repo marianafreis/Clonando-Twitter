@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Twitter</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	</head>
+
+	<!-- corpo -->
+	<body>
+
+		<div class="container">
+
+			<!-- cabeçalho -->
+			<header class="cabecalho">
+				
+				<!-- imagem logo-->	
+				<figure class="cabecalho__logo">
+					<img src="./assets/img/logo.png" alt="Logo Twitter">
+					<figcaption hidden>Logo Twitter</figcaption>
+				</figure>
+
+				<!-- menu de navegação -->
+				<nav class="cabecalho__menuNavegacao">
+					<!-- lista de links -->
+					<ul class="cabecalho__menuLista">
+						<li class="cabecalho__menuItem">
+							<img src="./assets/img/home.png" alt="Home">
+							<a href="">Página Inicial</a>
+						</li>
+						<li class="cabecalho__menuItem">
+							<img src="./assets/img/hashtag.png" alt="Explorar">
+							<a href="">Explorar</a>
+						</li>
+						<li class="cabecalho__menuItem">
+							<img src="./assets/img/notification.png" alt="Notificações">
+							<a href="">Notificações</a>
+						</li>
+						<li class="cabecalho__menuItem">
+							<img src="./assets/img/messages.png" alt="Mensagens">
+							<a href="">Mensagens</a>
+						</li>
+						<li class="cabecalho__menuItem">
+							<img src="./assets/img/save.png" alt="Itens salvos">
+							<a href="">Itens salvos</a>
+						</li>
+						<li class="cabecalho__menuItem">
+							<img src="./assets/img/list.png" alt="Listas">
+							<a href="">Listas</a>
+						</li>
+						<li class="cabecalho__menuItem">
+							<img src="./assets/img/user.png" alt="Perfil">
+							<a href="">Perfil</a>
+						</li>
+						<li class="cabecalho__menuItem">
+							<img src="./assets/img/more.png" alt="Mais">
+							<a href="">Mais</a>
+						</li>
+						<button>Tweetar</button>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- conteúdo principal -->
+			<main class="conteudoPrincipal">
+				<h3 class="conteudoPrincipal__titulo">Página Inicial</h3>
+
+				<!-- formulário -->
+				<form action="#" class="conteudoPrincipal__formulario">
+					<div class="conteudoPrincipal__postar">
+						<img class="tweet__fotoPerfil" src="./assets/img/avatar-mulher2.png">
+						<textarea name="textoTweet" placeholder="O que está acontecendo?"></textarea>
+					</div>
+					<button class="botao" type="submit">Tweetar</button>
+				</form>
+
+				<!-- feed -->
+				<section class="conteudoPrincipal__feed">
+					<ul class="conteudoPrincipal__listaTweets">
+						<li class="conteudoPrincipal__tweet">
+							<img class="tweet__fotoPerfil" src="./assets/img/avatar-homem.png" alt="João">
+
+							<div class="tweet__conteudo">
+								<h2 class="tweet__nome">João</h2>
+								<span class="tweet__usuario">@joaozinho · 21h32</span>
+								<p class="tweet__texto">Lorem ipsum dolor sit amet. Vel odit sapiente ex aliquid rerum aut consequatur galisum id autem recusandae</p>
+							</div>
+						</li>
+						<li class="conteudoPrincipal__tweet">
+							<img class="tweet__fotoPerfil" src="./assets/img/avatar-mulher.png" alt="João">
+
+							<div class="tweet__conteudo">
+								<h2 class="tweet__nome">Maria</h2>
+								<span class="tweet__usuario">@mariazinha · 21h47</span>
+								<p class="tweet__texto">Erat pellentesque adipiscing commodo elit at imperdiet. Ultricies mi eget mauris pharetra.</p>
+							</div>
+						</li>
+						<li class="conteudoPrincipal__tweet">
+							<img class="tweet__fotoPerfil" src="./assets/img/avatar-homem2.png" alt="João">
+
+							<div class="tweet__conteudo">
+								<h2 class="tweet__nome">Pedro</h2>
+								<span class="tweet__usuario">@pedrinho · 21h54</span>
+								<p class="tweet__texto">Mi proin sed libero enim sed faucibus turpis in eu. Sit amet dictum sit amet justo. Nam at lectus urna duis convallis convallis tellus id interdum.</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</main>
+
+			<!-- trending topics -->
+			<section class="maisConteudo">
+				<div class="maisConteudo__busca">
+					<img src="./assets/img/busca.png" alt="buscar">
+					<input type="text" placeholder="Buscar no Twitter">
+				</div>
+
+				<div class="maisConteudo__trending">
+					<h3>O que está acontecendo</h3>
+
+					<div class="maisConteudo__topicos">
+						<p>Internacional · AO VIVO</p>
+						<h5>A erat nam at lectus urna</h5>
+						<p>Leo vel fringilla est ullamcorper eget nulla facilisi etiam.</p>
+					</div>
+
+					<div class="maisConteudo__topicos">
+						<h5>#ConsecteturAdipiscing</h5>
+						<p>Eget dolor morbi non arcu risus quis varius quam.</p>
+					</div>
+
+					<div class="maisConteudo__topicos">
+						<p>Assunto do Momento</p>
+						<h5>Pretium aenean</h5>
+						<p>4.017 Tweets</p>
+					</div>
+
+					<div class="maisConteudo__topicos">
+						<p>Assunto do Momento em Brasil</p>
+						<h5>Eu feugiat pretium</h5>
+						<p>47,2 mil Tweets</p>
+					</div>
+
+					<div class="maisConteudo__topicos">
+						<p>Esportes · Assunto do Momento</p>
+						<h5>aliquet sagittis</h5>
+						<p>22,2 mil Tweets</p>
+					</div>
+
+					<div class="maisConteudo__topicos">
+						<p>Assunto do Momento em Política</p>
+						<h5>Commodo elit at imperdiet</h5>
+						<p>2.535 Tweets</p>
+					</div>
+					
+				</div>
+			</section>
+
+		</div>
+
+		<script type="text/javascript" src="./assets/js/script.js"></script>
+
+	</body>
+</html>
